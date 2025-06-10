@@ -15,9 +15,9 @@ const xScoreElement = document.getElementById('x-score');
 const oScoreElement = document.getElementById('o-score');
 
 const winningConditions = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
-    [0, 3, 6], [1, 4, 7], [2, 5, 8], // columns
-    [0, 4, 8], [2, 4, 6]             // diagonals
+    [0, 1, 2], [3, 4, 5], [6, 7, 8], 
+    [0, 3, 6], [1, 4, 7], [2, 5, 8], 
+    [0, 4, 8], [2, 4, 6]             
 ];
 
 function initializeBoard() {
@@ -59,7 +59,7 @@ function handleCellClick(event) {
     gameBoard[index] = currentPlayer;
 
     const img = cell.querySelector('img');
-    img.src = `images/${currentPlayer}-image.png?${Date.now()}`; // Cache buster
+    img.src = `images/${currentPlayer}-image.png?${Date.now()}`; 
     img.alt = currentPlayer.toUpperCase();
     img.style.display = 'block';
 
@@ -93,7 +93,7 @@ function endGame(isDraw) {
     gameActive = false;
 
     if (isDraw) {
-        turnDisplay.textContent = "Game ended in a draw!";
+        turnDisplay.textContent = "draw!";
     } else {
         turnDisplay.textContent = `${PLAYER_NAMES[currentPlayer]} wins!`;
         scores[currentPlayer]++;
