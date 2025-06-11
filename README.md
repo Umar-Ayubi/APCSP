@@ -18,3 +18,6 @@ Just load the website, click play, and just click on the squares. regular TicTac
 - Game is inspired by basic TicTacToe like the one that I made with Bridegt for the AP project
 - DeepSeek and ChatGPT and Duck used for specific things that I wanted assistance with, like how to program a thing if I didnt know how to or help with debugging or help with syntax etc
 - Got a lot of help from Henry and other classmates with the code as well
+
+Link to the video
+https://drive.google.com/file/d/1AH1Wpdd7GPySAF0_OfdBOV8yaCU-0-UL/view?usp=sharing 
